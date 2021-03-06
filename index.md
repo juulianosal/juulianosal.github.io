@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1 style="color:red">Hello Word</h1>
+<h1 style="color:red">Hello World</h1>
 
 
 </body>
