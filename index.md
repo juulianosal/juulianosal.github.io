@@ -6,4 +6,28 @@
     <body>
         <h1 style="color:red">Hello Word</h1>
     </body>
+    <body>
+
+<h1 style="color:pink">Hello Word</h1>
+
+<p>tylko to chce <span style="color:pink">różowe</span> <div class ="granatowa">a to granatowe<div> </p>
+
+<b>Wytłuszcony tekst</b>
+
+<a href="https://www.agh.edu.pl/" style="color:green">Strona agh</a> 
+
+<ul>
+<li>kropka 1</li>
+<li>kropka 2</li>
+</ul>
+
+tekst<br>na dole
+
+<li>
+jaja
+</li>
+
+
+
+</body>
 </html>
