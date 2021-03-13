@@ -4,6 +4,6 @@
         <title>Julia Nosal</title>
     </head>
     <body>
-        <p style="color: darkmagenta;">Hello World</p>
+        <h1 style="color:pink">Hello Word</h1>
     </body>
 </html>
