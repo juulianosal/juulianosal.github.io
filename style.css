@@ -36,7 +36,7 @@
 .bok
 {
     float: left;
-    background: linear-gradient(to right, rgb(47, 38, 225), #0066ff);
+    background: linear-gradient(to right, rgb(225, 159, 38), #ffa600);
     width: 300px;
     min-height: 1200px;
     padding: 10px;
