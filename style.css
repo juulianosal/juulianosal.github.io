@@ -61,7 +61,7 @@
 .name
 {
     font-family: 'Marcellus SC', sans-serif;
-    color: #0000ff;
+    color: #ff0000;
     background-color: #cacaca;
     font-size: 60px;
     margin-left: 20px;
@@ -87,7 +87,7 @@
 .description
 {
     
-    background-color: #cacaca;
+    background-color: #c000b0;
     font-size: 20px;
     margin-top: 20px;
     position: relative;
@@ -156,7 +156,7 @@
 .head2
 {
     font-family: 'Marcellus SC', sans-serif;
-    color: #0000ff;
+    color: #00c3ff;
     margin-bottom: 20px;
     margin-top: 80px;
     font-size: 25px;
