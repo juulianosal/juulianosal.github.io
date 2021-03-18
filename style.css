@@ -10,7 +10,7 @@
 
 .icon
 {
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 25px;
 
@@ -33,12 +33,24 @@
     
 }
 
+.icon3
+{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 20px;
+    
+}
+
 .bok
 {
     float: left;
     background: linear-gradient(to right, rgb(225, 159, 38), #ffa600);
     width: 300px;
-    min-height: 1200px;
+    min-height: 1600px;
     padding: 10px;
     margin-top: 25px;
     margin-left: 25px;
@@ -109,7 +121,7 @@
 {
     content: "";
     position: absolute;
-    top: 150px;
+    top: 120px;
     right: 0;
     width: 880px;
     height: 1px;
@@ -146,6 +158,15 @@
     font-size: 20px;
 }
 
+.text3
+{
+    
+    margin-top: 5px;
+    color: #000000;
+    font-style:italic;
+    margin-right: 20px;
+    font-size: 20px;
+}
 .li_wrap
 {
     margin-bottom: 15px;
@@ -162,7 +183,8 @@
     font-size: 25px;
     font-weight: 1000;
     letter-spacing: 2px;
-    text-align: center;
+    margin-left: 10px;
+    
     
     
 
