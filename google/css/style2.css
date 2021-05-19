@@ -1,0 +1,272 @@
+.results .logo {
+    margin-left: 1.5%;
+    margin-right: 2.5%;
+    height: 50px;
+    width: 120px;
+    bottom: 2px;
+    padding-bottom: 0px;
+    float: left;
+    
+}
+
+.results .s-input{
+    margin-top: 60px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    float: left;
+    
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 46px;
+    margin: 0;
+    width: auto;
+    max-width: 700px;
+    flex: 1;
+    box-shadow: 0 0 5px 1px #ededed;
+    float: left;
+}
+
+.results .s-btn {
+    display: none;
+}
+
+.results .vs-icon {
+    display: none;
+}
+
+.results .footer {
+    display: none;
+  }
+
+  .results .lang {
+    display: none;
+  }
+
+  .results .nav {
+    display: none;
+  }
+
+  .results .search-icon {
+      display: none;
+  }
+
+  .results .kryteria {
+    display: flex;
+    margin-left: 193px;
+    margin-top: 22px;
+    margin-bottom: 5px;
+    
+}
+
+.results .kryt1{
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-left: 27px;
+    color: rgb(34, 106, 230);
+    
+}
+
+.results .kryt{
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-left: 27px;
+    color: rgb(123, 123, 123);
+    
+}
+
+.results .part1 {
+    display: flex;
+}
+
+.results .wynik {
+    display: table;
+    margin-left: 220px;
+    margin-top: 22px;
+    margin-bottom: 5px;
+}
+
+.results .link1 {
+    text-decoration: none;
+    color: black;
+}
+
+.results .link2 {
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    padding-left: 3px;
+}
+
+.results .triangle {
+    padding-left: 10px;
+    padding-top: 1px;
+    display: flex;
+    color: rgb(122, 121, 121);
+}
+
+.results .link {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.results .hiper_blue {
+    text-decoration: none;
+    color: rgb(0, 0, 225);
+    font-size: 20px;
+
+}
+
+.results .hiper_blue:hover{
+    text-decoration: underline;
+}
+
+.results .opis {
+    margin-top: 5px;
+    max-width: 550px;
+    line-height: 23px;
+}
+
+.results .podobne {
+    font-size: 19px;
+    margin-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.results .stopka {
+    display: none;
+}
+
+.results .szare {
+    margin-top: 8px;
+    background: rgb(248, 248, 248);
+    display: flex;
+    
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 46px;
+    margin-left: 220px;
+    
+    width: auto;
+    max-width: 320px;
+    flex: 1;
+    display: flex;
+
+}
+
+.results .szare1 {
+    margin-top: 8px;
+    background: rgb(248, 248, 248);
+    display: flex;
+    
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 46px;
+    margin-left: 20px;
+    
+    max-width: 320px;
+    flex: 1;
+    display: flex;
+
+}
+
+.results .szukaj_icon2{
+    
+    display: flex;
+    align-items: center;
+    size: 4px;
+    width: 22px;
+    height: 22px;
+    margin-left: 30px;
+    position: relative;
+    bottom: -12px;
+    left: -10px;
+}
+
+.results .wiersz {
+    
+    display: flex;
+}
+
+.results .podobne_wynik {
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    width: auto;
+    color: black;
+    margin-left: 20px;
+    position: relative;
+    bottom: -1px;
+    left: -10px;
+}
+
+.results .spis {
+    margin-left: 350px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.results .numery {
+    margin-left: 392px;
+    margin-top: 5px;
+    font-size: 15px;
+    
+
+}
+
+.results .n1 {
+color: black;
+}
+
+.results .n {
+    margin-left: 16.1px;
+    color: rgb(29, 125, 210);
+
+}
+
+.results .g {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(29, 125, 210);
+    
+}
+
+.results .oc {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(186, 0, 0);
+}
+.results .oz {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 204, 0);
+}
+.results .g1 {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(29, 125, 210);
+}
+.results .l {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(48, 145, 0);
+}
+
+.results .e {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(186, 0, 0);
+}

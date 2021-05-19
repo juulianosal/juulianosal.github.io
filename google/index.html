@@ -1,51 +1,291 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
+    <script src="https://kit.fontawesome.com/dd0ff15abc.js" crossorigin="anonymous"></script>
+    <script src="vue.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <nav>
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <img src="img/g-menu.jpg">
-        <button>Sign in</button>
-    </nav>
-    <section class="section-1">
-        <img src="img/logo.jpg" class="logo">
-        <form><br><br>
-            <div class="s-box">
-                <img src="img/search.jpg" class="search-icon">
-                <input type="text"class="s-input">
-                <img src="img/vs.jpg" class="vs-icon">
-                <input type="submit" class="s-btn" value="Google Search">
-                <input type="submit" class="s-btn" value="I'm Feeling Lucky">
-            </div>
-        </form>
-        <div class="lang">
-            Google offered in:
-            <a href="#">Poland</a>
-            <a href="#">Frysk</a>
-        </div>
-    </section>
-    <footer>
-        <h4>Poland</h4>
-        <div class="links">
-            <div class="link-1">
-            <a href="#">Advertising</a>
-            <a href="#">Business</a>
-            <a href="#">About</a>
-            <a href="#">How Search works</a>
-            </div>
-        <div class="link-2">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Settings</a>
-            </div>
-        </div>
-    </footer>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
 
+</head>
+
+<body>
+    <div id="wrapp" :class="{results: googleSearch.length > 0}">
+        <div class="nav">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <img src="img/g-menu.jpg">
+            <button>Sign in</button>
+        </div>
+        <section class="section-1">
+            <img src="img/logo.jpg" class="logo">
+            <form><br><br>
+                <div class="s-box">
+                    <img src="img/search.jpg" class="search-icon">
+                    <input type="text" class="s-input" v-model="googleSearch">
+                    <img src="img/vs.jpg" class="vs-icon">
+                    <input type="submit" class="s-btn" value="Google Search">
+                    <input type="submit" class="s-btn" value="I'm Feeling Lucky">
+                </div>
+            </form>
+            <div class="lang">
+                Google offered in:
+                <a href="#">Poland</a>
+                <a href="#">Frysk</a>
+            </div>
+        </section>
+        <div class="footer">
+            <h4>Poland</h4>
+            <div class="links">
+                <div class="link-1">
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">About</a>
+                    <a href="#">How Search works</a>
+                </div>
+                <div class="link-2">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </div>
+            </div>
+        </div>
+        <div class="kryteria">
+            <a class="kryt1" href="">Wszystko</a>
+            <a class="kryt" href="">Grafika</a>
+            <a class="kryt" href="">Wideo</a>
+            <a class="kryt" href="">Wiadomości</a>
+            <a class="kryt" href="">Zakupy</a>
+            <a class="kryt" href="">Więcej</a>
+            <a class="kryt" href="">Ustawienia</a>
+            <a class="kryt" href="">Narzędzia</a>
+        </div>
+
+
+        <div class="kryteria">
+            <a class="kryt" href="">Około 75 321 000 wyników (0,53 s)</a>
+        </div>
+
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Akademia Górniczo-Hutnicza - Kierunki - Studia</a>
+            <div class="opis">AGH. Informacje ogólne. Studia stacjonarne i niestacojnarne, Kod
+                Wybierz
+                / University of Science...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Akademia Górniczo-Hutnicza - Kierunki - Studia</a>
+            <div class="opis">AGH. Cracow, Cracow, Poland. 65914 likes 
+                · 1034 talking about this...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">AGH - Instagram = (@AGH)</a>
+            <div class="opis"> Akademia Górniczo-Hutnicza, 736362 follows
+                follow me, KRK, , ...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Uczelnie - Akademia - Najlepsze Polska</a>
+            <div class="opis">Akademia Górniczo-Hutnicza. Informacje ogólne. Kod uczelni: 102A-EHSUTM-IJEJ-OSJ, Kod
+                Uczelnia
+                / info (brak ...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Uczelnie - Akademia - Najlepsze Polska</a>
+            <div class="opis">Akademia Górniczo-Hutnicza. Informacje ogólne. Kod uczelni: 102A-EHSUTM-IJEJ-OSJ, Kod
+                Uczelnia
+                / info (brak ...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Uczelnie - Akademia - Najlepsze Polska</a>
+            <div class="opis">Akademia Górniczo-Hutnicza. Informacje ogólne. Kod uczelni: 102A-EHSUTM-IJEJ-OSJ, Kod
+                Uczelnia
+                / info (brak ...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Akademia Górniczo-Hutnicza - Kierunki - Studia</a>
+            <div class="opis">AGH. Informacje ogólne. Studia stacjonarne i niestacojnarne, Kod
+                Wybierz
+                / University of Science...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Akademia Górniczo-Hutnicza - Kierunki - Studia</a>
+            <div class="opis">AGH. Informacje ogólne. Studia stacjonarne i niestacojnarne, Kod
+                Wybierz
+                / University of Science...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Akademia Górniczo-Hutnicza - Przedmioty - Sylabus</a>
+            <div class="opis">Techniki internetowe. Informacje ogólne. Kod przedmiotu: 873D-EUBTM-OIP-TINM, Kod
+                Erasmus
+                / ISCED: (brak ...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Techniki internetowe - Przedmioty - USOSWEB PW</a>
+            <div class="opis">Techniki internetowe. Informacje ogólne. Kod przedmiotu: 103A-ETRTM-IWP-TIJOM, Kod
+                Erasmus
+                / ISCED: (brak ...</div>
+        </div>
+        <div class="wynik">
+            <div class="link">
+                <a class="link1" href="">agh.edu.pl</a>
+                <a class="link2" href=""> › kontroler › pokazWyniki</a>
+                <div class="triangle">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <a class="hiper_blue" href="">Akademia Górniczo-Hutnicza - Przedmioty - USOSWEB PW</a>
+            <div class="opis">Syllabus. Informacje ogólne. Przedmioty. Wymagania. Kierunki. TI. Kod...
+                Erasmus
+                / ISCED: (brak ...</div>
+
+        </div>
+        <div class="wynik">
+            <div class="podobne">Podobne wyszukiwania</div>
+        </div>
+        <div class="na_dole">
+            <div class="wiersz">
+                <div class="szare">
+                    <a class="podobne_wynik" href="">Politechnika Śląska</a>
+                </div>
+                <div class="szare1">
+                    <a class="podobne_wynik" href="">Informatyka i ekonometria</a>
+                </div>
+            </div>
+            <div class="wiersz">
+                <div class="szare">
+                    <a class="podobne_wynik" href="">Przedmioty AGH</a>
+                </div>
+                <div class="szare1">
+                    <a class="podobne_wynik" href="">AGH Kraków opinie</a>
+                </div>
+            </div>
+            <div class="wiersz">
+                <div class="szare">
+                    <a class="podobne_wynik" href="">Wydział Zarządzania</a>
+
+                </div>
+                <div class="szare1">
+                    <a class="podobne_wynik" href="">AGH kierunki</a>
+                </div>
+            </div>
+            <div class="wiersz">
+                <div class="szare">
+
+                    <a class="podobne_wynik" href="">AGH rekrutacja</a>
+                </div>
+                <div class="szare1">
+                    <a class="podobne_wynik" href="">Opłata za studia AGH</a>
+                </div>
+            </div>
+            <div class="spis">
+                <a class="g" href="">G</a>
+                <a class="oc" href="">o</a>
+                <a class="oz" href="">o</a>
+                <a class="oz" href="">o</a>
+                <a class="oz" href="">o</a>
+                <a class="oz" href="">o</a>
+                <a class="oz" href="">o</a>
+                <a class="oz" href="">o</a>
+                <a class="g1" href="">g</a>
+                <a class="l" href="">l</a>
+                <a class="e" href="">e</a>
+            </div>
+            <div class="numery">
+                <a class="n1" href="">1</a>
+                <a class="n" href="">2</a>
+                <a class="n" href="">3</a>
+                <a class="n" href="">4</a>
+                <a class="n" href="">5</a>
+                <a class="n" href="">6</a>
+                <a class="n" href="">7</a>
+                <a class="n" href="">8</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+                el: '#app',
+                data: {
+                    googleSearch: "",
+                }
+            });
+        </script>
 </body>
+
 </html>
