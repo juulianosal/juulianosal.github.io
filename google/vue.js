@@ -1,5 +1,5 @@
-var app = new Vue({
-    el: '#app',
+var wrapper = new Vue({
+    el: '#wrapper',
     data: {
         googleSearch: "",
     }

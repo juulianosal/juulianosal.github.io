@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div id="wrapp" :class="{results: googleSearch.length > 0}">
+    <div id="wrapper" :class="{results: googleSearch.length > 0}">
         <div class="nav">
             <a href="#">Gmail</a>
             <a href="#">Images</a>
@@ -278,14 +278,6 @@
             </div>
         </div>
     </div>
-    <script>
-        var app = new Vue({
-                el: '#app',
-                data: {
-                    googleSearch: "",
-                }
-            });
-        </script>
 </body>
 
 </html>
