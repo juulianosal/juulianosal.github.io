@@ -209,3 +209,7 @@
 .kryteria {
     margin-top: 100px;
 }
+
+#footer {
+    display: none;
+}
