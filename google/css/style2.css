@@ -270,3 +270,21 @@ color: black;
     text-decoration: none;
     color: rgb(186, 0, 0);
 }
+
+.lista_miast {
+    display:none
+}
+
+.results .lista_miast {
+    display: block;
+}
+
+.results span {
+    font-weight: bold;
+    display: flex;
+}
+
+.results span.nobold {
+    font-weight: 100;
+
+}
